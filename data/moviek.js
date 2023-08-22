@@ -301,7 +301,6 @@ Epilogue:
     id: 8,
     title: 'A Scholar"s Odyssey',
     description: `
-
 Genre: Drama/Inspiration
 
 Setting: Rural India and Urban Educational Institutions
