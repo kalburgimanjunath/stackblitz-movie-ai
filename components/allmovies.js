@@ -1,5 +1,6 @@
 // import Speech from 'react-speech';
 import { useState } from 'react';
+import Image from 'next/image';
 export default function AllMovies({ items }) {
   const msg = new SpeechSynthesisUtterance();
   const [ourText, setOurText] = useState('');
@@ -13,7 +14,8 @@ export default function AllMovies({ items }) {
     utterance.voice = voices[4];
     utterance.lang = voices[4].lang;
     // utterance.voice = 'Hysterical'; // this seems to do nothing
-    utterance.text = 'Facebook news feeds are full of garbage';
+    utterance.text = msg;
+    console.log(utterance);
     window.speechSynthesis.speak(utterance);
   };
   return (
@@ -23,6 +25,13 @@ export default function AllMovies({ items }) {
           return (
             <>
               <div className="font-bold">{item.title}</div>
+              <div>
+                {/* <Image
+                  src={`../public/assets/images/${item.image}`}
+                  width="200"
+                  height="200"
+                /> */}
+              </div>
               <button onClick={() => speechHandler(item.title)}>SPEAK</button>
               {/* <Speech
                 text={item.description}

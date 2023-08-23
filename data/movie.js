@@ -2,6 +2,7 @@ export const MOVIES = [
   {
     id: 1,
     title: 'Rise of the Eternal Dharma',
+    image: '_Nova Haven_ Un 1.png',
     description: `Genre: Historical Drama/Adventure
   
   Setting: Ancient India, during the height of the Hindu civilization
@@ -262,6 +263,7 @@ Epilogue:
   {
     id: 7,
     title: 'The Integrity Revolution',
+    image: './_Nova Haven_ Un 0.png',
     description: `
 Genre: Drama/Political Thriller
 
